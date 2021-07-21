@@ -10,23 +10,24 @@
 <style>
   
   
-  input[type=text] {
-  width: 150px;
-  box-sizing: 100%;
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
   border: 2px solid #ccc;
-  border-radius: 5px;
-  font-size: 13px;
+  border-radius: 4px;
+  font-size: 16px;
   background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
   background-repeat: no-repeat;
-  padding:12px 50px 12px 40px;
+  padding: 12px 20px 12px 40px;
   transition: width 0.4s ease-in-out;
+  float: left;
 }
 
 input[type=text]:focus {
-  width: 150%;
+  width: 100%;
 }
-  
-display: flex; 
   
   .header {
   padding: 30px;
@@ -106,10 +107,10 @@ li a:hover:not(.active) {
   width 100%;
  
 } 
+
   
 body {
   background-color: white;
- max-width: 10000px;
  width 100%;
 }
 
@@ -153,6 +154,13 @@ body {
 }
 
 
+.body {
+  background-color: white;
+  padding: 20mm 5mm;
+  text-align: center;
+}
+
+
 
 
 
@@ -165,12 +173,15 @@ body {
   
 <body>
   
-   <nav> 
+
+
 <div class="header">
   <h1>CHH 우리의 급식 </h1>
   <p>충현고 학생들 모여라!</p>
-</div>
+  
 
+
+</div>
 
 
   
@@ -181,14 +192,25 @@ body {
   <li><a href="#">오늘의 급식</a></li>
   <li><a href="#">최고의 급식</a></li>
   <li><a href="#">잡담</a></li>
-  
- 
+
 </ul>
 </div>
+
+<div class="body">
+    <form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+
+</div>
+
+
+
+
 
 
 
   
   
 </body>
+
 </html>
