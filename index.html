@@ -48,54 +48,53 @@ display: flex;
   }
   
   
-ul {
-  list-style-type: none;
+
+
+
+  #nav {
+    position: absolute;
+    left: 0px;
+  
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+  
+ 
+#nav ul {
+list-style-type: none;
   width 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  border: 1px solid #e7e7e7;
   background-color: #333;
 }
-
-li {
-  float:  left;
+#nav ul li {
+  margin: 0;
+  padding: 0;
+  float: left;
+ 
+  background-color: #333;
 }
-
-li a {
-  display: block;
+#nav ul li a {
+ display: block;
   color: #ddd;
   text-align: center;
-  padding: 20px 16px;
+  padding: 20px 280px;
   text-decoration: none;
   font-size: 18px;
 }
 
-li b {
-  display: block;
-  color: #ddd;
-  text-align: center;
-  padding: 2px 3px;
-  text-decoration: none;
-}
-
 li a:hover:not(.active) {
   background-color: #232323;
-}
-
-nav {
-
-margin:0 auto;
-list-style:none;
-}
-nav li {
-float:center;
-}
-nav a {
-display:block;
-text-align:center;
-width:250px; 
-text-decoration:none; 
 }
 
 
@@ -118,7 +117,7 @@ h1 {
   font-family: sans-serif;
   text-align: center;
   color: #4B4B4B;
-  font-size: 400%;
+  font-size: 380%;
 }
 
 p {
@@ -173,25 +172,19 @@ body {
 </div>
 
 
-<ul>
-<li>
-<b>
-<form>
-  <input type="text" name="search" placeholder="Search..">
-</form>
-         </b> </li>
-          </ul>
 
   
-<ul id="nav">
+<div id="nav">
+  <ul>
   <li><a href="#">공지사항</a></li>
   <li><a href="#">식단표</a></li>
   <li><a href="#">오늘의 급식</a></li>
   <li><a href="#">최고의 급식</a></li>
   <li><a href="#">잡담</a></li>
+  
+ 
 </ul>
-
-
+</div>
 
 
 
