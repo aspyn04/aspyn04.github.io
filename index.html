@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <head>
 <style>
 
@@ -41,7 +44,7 @@
   background-color: #333;
 }
 #nav ul li a {
- display: block;
+  display: block;
   color: #ddd;
   text-align: center;
   padding: 18px 150px;
@@ -49,7 +52,18 @@
   font-size: 16px;
 }
 
+#nav ul li b {
+ display: block;
+  color: #ddd;
+  padding: 18px 80px;
+  font-size: 16px;
+}
+
 li a:hover:not(.active) {
+  background-color: #232323;
+}
+
+li b:hover:not(.active) {
   background-color: #232323;
 }
 
@@ -121,11 +135,13 @@ p3 {
 
 <div id="nav">
   <ul>
+  <li><b href="#"><i class="fa fa-search"></i></b></li>
   <li><a href="#">공지사항</a></li>
   <li><a href="#">식단표</a></li>
   <li><a href="#">오늘의 급식</a></li>
   <li><a href="#">최고의 급식</a></li>
   <li><a href="#">잡담</a></li>
+ <li> <b href="#"><i class="fa fa-fw fa-user"></i></b></li>
 </div>
 
 <div class="title">
@@ -136,4 +152,3 @@ p3 {
 
 </body>
 </html>
-
