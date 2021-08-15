@@ -3,11 +3,6 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <head>
@@ -15,9 +10,24 @@
 
 
 
+ #Title{ 
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+
 /* 내비게이션 바 설정 */
 
 
+ #rectangle {
+      width: 100%;
+      height: 60px;
+      background: #333;
+      z-index 0;
+      position: fixed;
+
+      }
+    
 #nav ul {
     list-style-type: none;
     width 100px;
@@ -26,9 +36,7 @@
     overflow: hidden;
     background-color: #333;
     display: block;
-    text-align: center;
-    float: center;
-    z-index 9999;
+    z-index 100;
     position: fixed;
 }
 
@@ -36,18 +44,16 @@
   margin: 0;
   padding: 0;
   float: right;
- text-align: center;
   background-color: #333;
 
 }
 #nav ul li a {
   display: block;
   color: #ddd;
-  text-align: center;
   padding: 18px 150px;
   text-decoration: none;
   font-size: 16px;
-  float: center;
+
 }
 
 #nav ul li b {
@@ -66,6 +72,15 @@ li b:hover:not(.active) {
   background-color: #232323;
 }
 
+
+ #rectangle {
+      width: 100%;
+      height: 60px;
+      background: #333;
+      z-index 0;
+
+    }
+    
 /* 텍스트 */
 
 h1 {
@@ -100,6 +115,34 @@ p3 {
 
 /* 클래스 */
 
+
+.title {
+  background-color: #f1f1f1;
+  padding: 170px 0px;
+  text-align: center;
+  right: 0;
+  left: 0;
+  display: block;
+  z-index: 9999;
+  height: 230px;
+  width: 100%;
+  margin: 0;
+}
+
+.nav101 {
+
+ position: fixed;
+    top: 0;
+    background-color: #333;
+    width: 100px;
+   display: block;
+   color: #f2f2f2;
+   text-decoration: none;
+text-align: center;
+  max-width:1080px;
+    float: center;
+
+}
 
 .nav {
     position: fixed;
@@ -140,11 +183,14 @@ text-align: center;
 <body>
 
 
+<div id="rectangle" tyle="background-color:#333; width 100% height: 30px;">>
+</div>
 
 
 
-<div id="nav">
-  <ul>
+<div id="nav" style="background-color:#333; width 100% height: 30px;">
+
+<ul>
   <li><b href="#"><i class="fa fa-user"></i></b></li>
   <li><a href="#">공지사항</a></li>
   <li><a href="#">식단표</a></li>
@@ -152,25 +198,28 @@ text-align: center;
   <li><a href="#">최고의 급식</a></li>
   <li><a href="#">잡담</a></li>
  <li> <b href="#" style="float:right" ><i class="fa fa-fw fa-search"></i></b></li>
+</ul>
 </div>
 
 
 
-  <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1><b>CHH 우리의 급식</b></h1>
-    <p1><span class="w3-tag">충현고</span> 학생들 모여라</p1>
-  </header>
+ <div class="title">
+   
+  <h1> CHH 우리의 급식 </h1>
+  <p1>충현고 학생들 모여라!</p1>
+</div>
     
-    
-<div style="max-width:1600px">
+<div style="max-width:1600px" style= "float: center">
 
     <img src="https://cdn.news.unn.net/news/photo/202105/508527_309114_4916.jpg" alt="사진" width="1600" height="1060">
-    
-  </header>
+
+
+</div>
+
+
 
 
 
 
 </body>
 </html>
-
