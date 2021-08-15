@@ -1,10 +1,12 @@
-  
 <!DOCTYPE html>
 <html>
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -26,35 +28,31 @@
     display: block;
     text-align: center;
       float: center;
-      position: fixed;
-    z-index: 100;
 }
 
 #nav ul li {
   margin: 0;
   padding: 0;
-   text-decoration: none;
-  float: left;
+  float: right;
  text-align: center;
   background-color: #333;
-        z-index: 100;
-
 }
 #nav ul li a {
   display: block;
   color: #ddd;
   text-align: center;
-  padding: 18px 170px;
+  padding: 18px 150px;
   text-decoration: none;
   font-size: 16px;
+  float: center;
 }
 
 #nav ul li b {
  display: block;
   color: #ddd;
-  padding: 18px 110px;
+  padding: 18px 100px;
   font-size: 16px;
-  float: center;
+  float: right;
 }
 
 li a:hover:not(.active) {
@@ -144,25 +142,25 @@ text-align: center;
 
 <div id="nav">
   <ul>
-  <li><b href="#"><i class="fa fa-user"></i></b></li>
+  <li><b href="#" style="float:left"><i class="fa fa-user"></i></b></li>
   <li><a href="#">공지사항</a></li>
   <li><a href="#">식단표</a></li>
   <li><a href="#">오늘의 급식</a></li>
   <li><a href="#">최고의 급식</a></li>
   <li><a href="#">잡담</a></li>
- <li> <b href="#" style="float: right" ><i class="fa fa-fw fa-search"></i></b></li>
+ <li> <b href="#" style="float:right" ><i class="fa fa-fw fa-search"></i></b></li>
 </div>
 
 
 
   <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1><b>CHH 우리의 급식</b></h1>
-    <p1><span class="w3-tag">충현고</span> 학생들 모여라</p1>
+    <h1 class="w3-xxxlarge"><b>CHH 우리의 급식</b></h1>
+    <h6><span class="w3-tag">충현고</span> 학생들 모여라</h6>
   </header>
 <div class="w3-content" style="max-width:1600px">
 
 <header class="w3-display-container w3-wide" id="home">
-    <img src="https://www.familyfoodonthetable.com/wp-content/uploads/2021/05/June-meal-plan-screen-shot-680x497.png" alt="사진" width="1600" height="1060">
+    <img src="https://cdn.news.unn.net/news/photo/202105/508527_309114_4916.jpg" alt="사진" width="1600" height="1060">
     
   </header>
 
@@ -171,3 +169,4 @@ text-align: center;
 
 </body>
 </html>
+
